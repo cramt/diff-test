@@ -11,3 +11,4 @@ const testFunctions: MathFunction[] = [
 const testPoints = generateRandomNumbers(500);
 
 const testResults = generateTestResults(testFunctions, testPoints);
+
