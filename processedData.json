@@ -3,42 +3,42 @@
         "function": "x^sin(x)",
         "data": [{
             "algorithmName": "central finite difference approximation",
-            "precisionAverage": 2.2851706032283778e-7,
+            "precisionAverage": 4.613389194902919e-7,
             "speedAverage": 99.664,
-            "precisionMedian": 4.149759852015625e-7,
+            "precisionMedian": 4.872285152282651e-7,
             "speedMedian": 101
         }, {
             "algorithmName": "forward finite difference approximation",
-            "precisionAverage": -0.021564959724996086,
+            "precisionAverage": 0.02574671295099675,
             "speedAverage": 99.78,
-            "precisionMedian": 0.000009120106660167397,
+            "precisionMedian": 0.0018337705920351763,
             "speedMedian": 100
         }, {
             "algorithmName": "backwards finite difference approximation",
-            "precisionAverage": 0.021566787831870462,
+            "precisionAverage": 0.025746709121701128,
             "speedAverage": 98.248,
-            "precisionMedian": 0.000004085978028739485,
+            "precisionMedian": 0.0018343366496093153,
             "speedMedian": 98
         }, {
             "algorithmName": "eulers method",
-            "precisionAverage": -0.007650286682964435,
+            "precisionAverage": 0.00910094005208952,
             "speedAverage": 12.384,
-            "precisionMedian": -3.6666639706178215,
+            "precisionMedian": 0.0008058636867982929,
             "speedMedian": 12
         }]
     }, {
         "function": "log(x)",
         "data": [{
             "algorithmName": "central finite difference approximation",
-            "precisionAverage": 6.107154440463916e-9,
+            "precisionAverage": 6.112532498302747e-9,
             "speedAverage": 52.822,
-            "precisionMedian": 3.405821381159478e-11,
+            "precisionMedian": 3.594020121247521e-11,
             "speedMedian": 53
         }, {
             "algorithmName": "forward finite difference approximation",
-            "precisionAverage": -0.000029561942418858806,
+            "precisionAverage": 0.000029561942418858806,
             "speedAverage": 49.596,
-            "precisionMedian": -0.000009090268890971027,
+            "precisionMedian": 0.000009090268890971027,
             "speedMedian": 50
         }, {
             "algorithmName": "backwards finite difference approximation",
@@ -48,9 +48,9 @@
             "speedMedian": 46
         }, {
             "algorithmName": "eulers method",
-            "precisionAverage": -0.000005645209758087031,
+            "precisionAverage": 0.00001598618748868754,
             "speedAverage": 10.614,
-            "precisionMedian": -4.1830834052203515e-7,
+            "precisionMedian": 0.000005998902823778871,
             "speedMedian": 11
         }]
     }, {
@@ -69,24 +69,24 @@
             "speedMedian": 47
         }, {
             "algorithmName": "backwards finite difference approximation",
-            "precisionAverage": -0.0012414248357243626,
+            "precisionAverage": 0.0012414248357243626,
             "speedAverage": 44.838,
-            "precisionMedian": -0.00124142483584615,
+            "precisionMedian": 0.00124142483584615,
             "speedMedian": 45
         }, {
             "algorithmName": "eulers method",
-            "precisionAverage": 0.000038441483861246826,
+            "precisionAverage": 0.0006259063907638899,
             "speedAverage": 7.24,
-            "precisionMedian": 0.00007404809463757388,
+            "precisionMedian": 0.0006103063994569179,
             "speedMedian": 7
         }]
     }, {
         "function": "x^2",
         "data": [{
             "algorithmName": "central finite difference approximation",
-            "precisionAverage": 3.1592825064169627e-12,
+            "precisionAverage": 3.98864966060676e-12,
             "speedAverage": 55.91,
-            "precisionMedian": 3.836575619776479e-12,
+            "precisionMedian": 4.146040820284657e-12,
             "speedMedian": 56
         }, {
             "algorithmName": "forward finite difference approximation",
@@ -96,15 +96,15 @@
             "speedMedian": 54
         }, {
             "algorithmName": "backwards finite difference approximation",
-            "precisionAverage": -0.000029586290378369642,
+            "precisionAverage": 0.000029586290378369642,
             "speedAverage": 50.268,
-            "precisionMedian": -0.000009090390794771468,
+            "precisionMedian": 0.000009090390794771468,
             "speedMedian": 49
         }, {
             "algorithmName": "eulers method",
-            "precisionAverage": 0.000005659746122288398,
+            "precisionAverage": 0.000015998695367459043,
             "speedAverage": 14.584,
-            "precisionMedian": 0.00000156733629096333,
+            "precisionMedian": 0.000005998951412337276,
             "speedMedian": 16
         }]
     }, {
@@ -123,15 +123,15 @@
             "speedMedian": 86
         }, {
             "algorithmName": "backwards finite difference approximation",
-            "precisionAverage": -0.0004998333736616084,
+            "precisionAverage": 0.0004998333736616084,
             "speedAverage": 80.074,
-            "precisionMedian": -0.0004998333738111522,
+            "precisionMedian": 0.0004998333738111522,
             "speedMedian": 81
         }, {
             "algorithmName": "eulers method",
-            "precisionAverage": 0.000015345220466821973,
+            "precisionAverage": 0.00025187350156147075,
             "speedAverage": 6.504,
-            "precisionMedian": 0.00003331398848396638,
+            "precisionMedian": 0.000246237557399929,
             "speedMedian": 6
         }]
     }, {
@@ -150,98 +150,98 @@
             "speedMedian": 48
         }, {
             "algorithmName": "backwards finite difference approximation",
-            "precisionAverage": -0.002076561816998019,
+            "precisionAverage": 0.002076561816998019,
             "speedAverage": 46.538,
-            "precisionMedian": -0.002076561817115659,
+            "precisionMedian": 0.002076561817115659,
             "speedMedian": 47
         }, {
             "algorithmName": "eulers method",
-            "precisionAverage": 0.00006492288873580737,
+            "precisionAverage": 0.0010475991400525724,
             "speedAverage": 8.312,
-            "precisionMedian": 0.00012422436671982986,
+            "precisionMedian": 0.0010219443263133061,
             "speedMedian": 8
         }]
     }, {
         "function": "tan(x)",
         "data": [{
             "algorithmName": "central finite difference approximation",
-            "precisionAverage": -0.0018203450387240063,
+            "precisionAverage": 0.0021799981421928858,
             "speedAverage": 62.306,
             "precisionMedian": 1.567138395062009e-7,
             "speedMedian": 62
         }, {
             "algorithmName": "forward finite difference approximation",
-            "precisionAverage": -0.0039039886922900124,
+            "precisionAverage": 0.006991975008019513,
             "speedAverage": 60.964,
-            "precisionMedian": -0.043598767950803245,
+            "precisionMedian": 0.0010357880910913486,
             "speedMedian": 61
         }, {
             "algorithmName": "backwards finite difference approximation",
-            "precisionAverage": 0.0015419784632407293,
+            "precisionAverage": 0.008476695009794595,
             "speedAverage": 54.88,
-            "precisionMedian": 0.00004970948413601965,
+            "precisionMedian": 0.001038606320551346,
             "speedMedian": 54
         }, {
             "algorithmName": "eulers method",
-            "precisionAverage": -0.0016212132688146763,
+            "precisionAverage": 0.004447725186437291,
             "speedAverage": 9.832,
-            "precisionMedian": -0.019105571217657363,
+            "precisionMedian": 0.00038247808965841107,
             "speedMedian": 11
         }]
     }, {
         "function": "((x^4)+22)^(1/4)",
         "data": [{
             "algorithmName": "central finite difference approximation",
-            "precisionAverage": 1.625992573078236e-8,
+            "precisionAverage": 1.6723624882959976e-8,
             "speedAverage": 73.564,
-            "precisionMedian": 1.5248920908513127e-12,
+            "precisionMedian": 3.708620080202792e-12,
             "speedMedian": 73
         }, {
             "algorithmName": "forward finite difference approximation",
-            "precisionAverage": 0.00003756466516794832,
+            "precisionAverage": 0.000037564665339361,
             "speedAverage": 70.754,
-            "precisionMedian": 2.6855014485807947e-7,
+            "precisionMedian": 2.8299823786427227e-11,
             "speedMedian": 70
         }, {
             "algorithmName": "backwards finite difference approximation",
-            "precisionAverage": -0.000037434609152715284,
+            "precisionAverage": 0.00003743461027386449,
             "speedAverage": 68.938,
-            "precisionMedian": -3.91365718928571e-8,
+            "precisionMedian": 3.3343335792689382e-12,
             "speedMedian": 69
         }, {
             "algorithmName": "eulers method",
-            "precisionAverage": 0.000017081200399425364,
+            "precisionAverage": 0.000022145912495862944,
             "speedAverage": 6.586,
-            "precisionMedian": 1.1221673467966757e-7,
+            "precisionMedian": 3.241828111746139e-8,
             "speedMedian": 6
         }]
     }],
     "processed": {
         "central finite difference approximation": {
             "algorithmName": "central finite difference approximation",
-            "precisionAverage": 1.625992573078236e-8,
-            "precisionMedian": 1.5248920908513127e-12,
+            "precisionAverage": 1.6723624882959976e-8,
+            "precisionMedian": 3.708620080202792e-12,
             "speedAverage": 73.564,
             "speedMedian": 73
         },
         "forward finite difference approximation": {
             "algorithmName": "forward finite difference approximation",
-            "precisionAverage": 0.00003756466516794832,
-            "precisionMedian": 2.6855014485807947e-7,
+            "precisionAverage": 0.000037564665339361,
+            "precisionMedian": 2.8299823786427227e-11,
             "speedAverage": 70.754,
             "speedMedian": 70
         },
         "backwards finite difference approximation": {
             "algorithmName": "backwards finite difference approximation",
-            "precisionAverage": -0.000037434609152715284,
-            "precisionMedian": -3.91365718928571e-8,
+            "precisionAverage": 0.00003743461027386449,
+            "precisionMedian": 3.3343335792689382e-12,
             "speedAverage": 68.938,
             "speedMedian": 69
         },
         "eulers method": {
             "algorithmName": "eulers method",
-            "precisionAverage": 0.000017081200399425364,
-            "precisionMedian": 1.1221673467966757e-7,
+            "precisionAverage": 0.000022145912495862944,
+            "precisionMedian": 3.241828111746139e-8,
             "speedAverage": 6.586,
             "speedMedian": 6
         }
