@@ -1,16 +1,31 @@
 import { EulersMethod } from './DifferentialAlgorithms/EulersMethod';
 import { BackwardsFiniteDifferenceApproximation } from './DifferentialAlgorithms/BackwardsFiniteDifferenceApproximation';
 import { CentralFiniteDifferenceApproximation } from './DifferentialAlgorithms/CentralFiniteDifferenceApproximation';
-import { MathJsAlgorithm } from './DifferentialAlgorithms/MathJsAlgorithm';
 import * as math from "mathjs"
 import { DifferentialAlgorithm } from "./DifferentialAlgorithm";
 import { MathFunction } from "./MathFunction";
 import { ForwardFiniteDifferenceApproximation } from './DifferentialAlgorithms/ForwardFiniteDifferenceApproximation';
 import * as fs from "fs"
 
-export const INT32_MAX = 2147483647
-export const INT32_MIN = -2147483647
 export const GLOBAL_DELTA_X_VALUE = 0.001;
+
+
+export interface TestResult {
+    function: MathFunction;
+    derivative: MathFunction;
+    dataSet: {
+        [key: number]: number
+    };
+    alogritmResult: {
+        [key: string]: {
+            [key: number]: {
+                speed: number
+                result: number
+                precision: number
+            }
+        }
+    }
+}
 
 export function createAlgorithms(f: MathFunction): Promise<DifferentialAlgorithm[]> {
     let inits: DifferentialAlgorithm[] = [
@@ -34,23 +49,6 @@ export function generateRandomNumbers(l: number): number[] {
     return re;
 }
 
-export interface TestResult {
-    function: MathFunction;
-    derivative: MathFunction;
-    dataSet: {
-        [key: number]: number
-    };
-    alogritmResult: {
-        [key: string]: {
-            [key: number]: {
-                speed: number
-                result: number
-                precision: number
-            }
-        }
-    }
-}
-
 export async function generateTestResults(testFunctions: MathFunction[], testPoints: number[]): Promise<TestResult[]> {
     let re: TestResult[] = [];
     testFunctions.map(func => {
@@ -68,6 +66,7 @@ export async function generateTestResults(testFunctions: MathFunction[], testPoi
     });
     return re;
 }
+
 (async () => {
     const testFunctions: MathFunction[] = [
         "x^sin(x)",
@@ -77,7 +76,7 @@ export async function generateTestResults(testFunctions: MathFunction[], testPoi
         "e^x",
         "64^x",
         "tan(x)",
-        "((x^4)+22)^(1/4)"
+        "((x^4)+22)^(1/4)",
     ]
 
     const testPoints = generateRandomNumbers(500);
@@ -87,15 +86,12 @@ export async function generateTestResults(testFunctions: MathFunction[], testPoi
     for (let i = 0; i < testResults.length; i++) {
         console.log("doing test for " + testResults[i].function)
         const algorithms = await createAlgorithms(testResults[i].function)
-        algorithms.forEach(algorithm => {
+        await algorithms.map(async algorithm => {
             console.log("doing test for " + algorithm.Name)
             testResults[i].alogritmResult[algorithm.Name] = {}
-            Object.getOwnPropertyNames(testResults[i].dataSet).map(parseFloat).forEach(async testNumber => {
+            await Object.getOwnPropertyNames(testResults[i].dataSet).map(parseFloat).map(async testNumber => {
                 let unixTime = getUnixTime()
                 let result = await algorithm.Run(testNumber)
-                if (isNaN(result)) {
-                    console.log(testResults[i].function + "AAAAAAAAAA")
-                }
                 let speed = getUnixTime() - unixTime;
                 testResults[i].alogritmResult[algorithm.Name][testNumber] = {
                     precision: (result - testResults[i].dataSet[testNumber]) / testResults[i].dataSet[testNumber],
